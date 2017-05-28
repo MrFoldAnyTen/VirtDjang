@@ -1,6 +1,6 @@
-# VirtDjang
-virtualenv implementation of django using python3
-
+## VirtDjang
+#virtualenv implementation of django using python3
+https://docs.djangoproject.com/en/1.11/intro/tutorial02/<br />
 
 virtualenv ENV  <br />
 cd ENV  <br />
@@ -21,27 +21,46 @@ git commit -m "First commit"<br />
 git remote add origin remote repository URL<br />
 git remote -v<br />
 git push origin master<br />
-<br />
+mrfoldanyten<br />
+mr10<br />
 <br />
 # clone from github<br />
+git clone https://github.com/MrFoldAnyTen/VirtDjang.git<br />
+cd VirtDjang<br />
+source bin/activate <br />
+cd mysite<br />
+atom .<br />
 <br />
+python manage.py runserver<br />add installed app <br />
+Do some magik<br />
+git add .<br />
+git commit -m "more editing"<br />
+git push origin master<br />
+mrfoldanyten<br />
+mr10<br />
+<br />
+
 <br />
 set timezone <br />
+LANGUAGE_CODE = 'en-uk'<br />
+TIME_ZONE = 'Europe/London'<br />
+add PollsConfig to INSTALLED_APPS<br />
 python manage.py migrate<br />
-add installed app <br />
-python manage.py makemigrations polls
+python manage.py makemigrations polls<br />
 <br />
-(ENV) dylan@Malvin ~/temp/temp/temp/Django-Web-Page/ENV/mysite $ python manage.py makemigrations polls<br />
-Migrations for 'polls':<br />
-  polls/migrations/0001_initial.py:<br />
     - Create model Choice<br />
     - Create model Question<br />
     - Add field question to choice<br />
 (ENV) dylan@Malvin ~/temp/temp/temp/Django-Web-Page/ENV/mysite $ <br />
 <br />
+python manage.py sqlmigrate polls 0001<br />
 python manage.py migrate<br />
 <br />
-
+change models, make migrations,migrate<br />
+# Use the shell<br />
+<br />
+python manage.py shell<br />
+<br />
 >>> from polls.models import Question, Choice <br />
 >>> Question.objects.all()<br />
 >>> from django.utils import timezone<br />
@@ -79,6 +98,18 @@ and because objects’ representations are used throughout Django’s automatica
 >>> Choice.objects.filter(question__pub_date__year=current_year)
 >>> c = q.choice_set.filter(choice_text__startswith='Just hacking')
 >>> c.delete()
-
-
-python manage.py createsuperuser
+<br />
+# Creating an admin user<br />
+python manage.py createsuperuser<br />
+Username (leave blank to use 'sam'): admin<br />
+Email address: admin@admin.com<br />
+Password: mrfoldanyten<br />
+Password (again): <br />
+tell the admin that Question objects have an admin interface. <br />
+creating the public interface<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
