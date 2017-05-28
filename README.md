@@ -1,5 +1,5 @@
-## VirtDjang
-#virtualenv implementation of django using python3
+## VirtDjang<br />
+#virtualenv implementation of django using python3<br />
 https://docs.djangoproject.com/en/1.11/intro/tutorial02/<br />
 
 virtualenv ENV  <br />
@@ -61,6 +61,7 @@ change models, make migrations,migrate<br />
 <br />
 python manage.py shell<br />
 <br />
+
 >>> from polls.models import Question, Choice <br />
 >>> Question.objects.all()<br />
 >>> from django.utils import timezone<br />
@@ -99,7 +100,7 @@ and because objects’ representations are used throughout Django’s automatica
 >>> c = q.choice_set.filter(choice_text__startswith='Just hacking')
 >>> c.delete()
 <br />
-# Creating an admin user<br />
+# Creating an admin user <br />
 python manage.py createsuperuser<br />
 Username (leave blank to use 'sam'): admin<br />
 Email address: admin@admin.com<br />
