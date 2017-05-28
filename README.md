@@ -13,6 +13,19 @@ python manage.py runserver<br />
 python manage.py startapp polls<br />
 <br />
 <br />
+# use github<br />
+make github repository online<br />
+git init<br />
+git add .<br />
+git commit -m "First commit"<br />
+git remote add origin remote repository URL<br />
+git remote -v<br />
+git push origin master<br />
+<br />
+<br />
+# clone from github<br />
+<br />
+<br />
 set timezone <br />
 python manage.py migrate<br />
 add installed app <br />
