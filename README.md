@@ -88,6 +88,7 @@ It’s important to add __str__() methods to your models, <br />
 for your own convenience when dealing with the interactive prompt<br />
 and because objects’ representations are used throughout Django’s automatically-generated admin.<br />
 <br />
+
 >>> Question.objects.filter(id=1)
 >>> Question.objects.filter(question_text__startswith='What')
 >>> from django.utils import timezone
@@ -122,7 +123,7 @@ creating the public interface<br />
 <br />
 
 # part 4<br />
-Use generic views: Less code is better<br />
+## Use generic views: Less code is better<br />
     Convert the URLconf.<br />
     Delete some of the old, unneeded views.<br />
     Introduce new views based on Django’s generic views.<br />
@@ -132,6 +133,15 @@ Use generic views: Less code is better<br />
     This is provided using the model attribute.<br />
     The DetailView generic view expects the primary key value
     captured from the URL to be called "pk", so we’ve
-    changed question_id to pk for the generic views.<br /> 
+    changed question_id to pk for the generic views.<br />
 <br />
+
+# Part 5<br />
+## Automated testing <br />
+python manage.py test polls<br />
+python manage.py shell<br />
+
+>>> from django.test.utils import setup_test_environment<br />
+>>> setup_test_environment()
+
 <br />
