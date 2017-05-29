@@ -1,7 +1,10 @@
 # VirtDjang<br />
+![tagoorwhat](/home/sam/Documents/temp/temp/VirtDjang/OlivettiM21.png)
 
-# virtualenv implementation of django using python3<br />
-<br />
+## virtualenv implementation of django using python3<br />
+
+# Initial setup (from tutorial)<br />
+
 https://docs.djangoproject.com/en/1.11/intro/tutorial02/<br />
 <br />
 virtualenv ENV  <br />
@@ -35,7 +38,6 @@ cd VirtDjang<br />
 source bin/activate <br />
 cd mysite<br />
 atom .<br />
-<br />
 python manage.py runserver<br />add installed app <br />
 Do some magik<br />
 git add .<br />
@@ -108,13 +110,6 @@ and because objects’ representations are used throughout Django’s automatica
 >>> c.delete()
 <br />
 
-## Creating an admin user <br />
-
-# Creating an admin user <br />
-
-## Creating an admin user <br />
-### Creating an admin user <br />
-just too seee what md works
 # Creating an admin user <br />
 
 python manage.py createsuperuser<br />
@@ -125,8 +120,18 @@ Password (again): <br />
 tell the admin that Question objects have an admin interface. <br />
 creating the public interface<br />
 <br />
+
+# part 4<br />
+Use generic views: Less code is better<br />
+    Convert the URLconf.<br />
+    Delete some of the old, unneeded views.<br />
+    Introduce new views based on Django’s generic views.<br />
 <br />
-<br />
-<br />
+
+    Each generic view needs to know what model it will be acting upon.
+    This is provided using the model attribute.<br />
+    The DetailView generic view expects the primary key value
+    captured from the URL to be called "pk", so we’ve
+    changed question_id to pk for the generic views.<br /> 
 <br />
 <br />
