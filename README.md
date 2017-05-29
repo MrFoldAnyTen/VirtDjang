@@ -124,16 +124,15 @@ creating the public interface<br />
 
 # part 4<br />
 ## Use generic views: Less code is better<br />
-    Convert the URLconf.<br />
-    Delete some of the old, unneeded views.<br />
-    Introduce new views based on Django’s generic views.<br />
-<br />
+    Convert the URLconf.
+    Delete some of the old, unneeded views.
+    Introduce new views based on Django’s generic views.
 
     Each generic view needs to know what model it will be acting upon.
-    This is provided using the model attribute.<br />
+    This is provided using the model attribute.
     The DetailView generic view expects the primary key value
     captured from the URL to be called "pk", so we’ve
-    changed question_id to pk for the generic views.<br />
+    changed question_id to pk for the generic views.
 <br />
 
 # Part 5<br />
