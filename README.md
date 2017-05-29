@@ -1,7 +1,9 @@
 ## VirtDjang<br />
-#virtualenv implementation of django using python3<br />
+<br />
+# virtualenv implementation of django using python3<br />
+<br />
 https://docs.djangoproject.com/en/1.11/intro/tutorial02/<br />
-
+<br />
 virtualenv ENV  <br />
 cd ENV  <br />
 source bin/activate<br />
@@ -12,8 +14,8 @@ cd mysite<br />
 python manage.py runserver<br />
 python manage.py startapp polls<br />
 <br />
-<br />
 # use github<br />
+<br />
 make github repository online<br />
 git init<br />
 git add .<br />
@@ -25,6 +27,7 @@ mrfoldanyten<br />
 mr10<br />
 <br />
 # clone from github<br />
+<br />
 git clone https://github.com/MrFoldAnyTen/VirtDjang.git<br />
 cd VirtDjang<br />
 source bin/activate <br />
@@ -39,7 +42,6 @@ git push origin master<br />
 mrfoldanyten<br />
 mr10<br />
 <br />
-
 <br />
 set timezone <br />
 LANGUAGE_CODE = 'en-uk'<br />
@@ -57,8 +59,10 @@ python manage.py sqlmigrate polls 0001<br />
 python manage.py migrate<br />
 <br />
 change models, make migrations,migrate<br />
+<br />
 # Use the shell<br />
 <br />
+
 python manage.py shell<br />
 <br />
 
@@ -78,7 +82,7 @@ def __str__(self):<br />
 It’s important to add __str__() methods to your models, <br />
 for your own convenience when dealing with the interactive prompt<br />
 and because objects’ representations are used throughout Django’s automatically-generated admin.<br />
-
+<br />
 >>> Question.objects.filter(id=1)
 >>> Question.objects.filter(question_text__startswith='What')
 >>> from django.utils import timezone
@@ -100,7 +104,13 @@ and because objects’ representations are used throughout Django’s automatica
 >>> c = q.choice_set.filter(choice_text__startswith='Just hacking')
 >>> c.delete()
 <br />
+## Creating an admin user <br />
 # Creating an admin user <br />
+## Creating an admin user <br />
+### Creating an admin user <br />
+just too seee what md works
+# Creating an admin user <br />
+
 python manage.py createsuperuser<br />
 Username (leave blank to use 'sam'): admin<br />
 Email address: admin@admin.com<br />
