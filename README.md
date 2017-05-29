@@ -1,5 +1,5 @@
-## VirtDjang<br />
-<br />
+# VirtDjang<br />
+
 # virtualenv implementation of django using python3<br />
 <br />
 https://docs.djangoproject.com/en/1.11/intro/tutorial02/<br />
@@ -14,6 +14,7 @@ cd mysite<br />
 python manage.py runserver<br />
 python manage.py startapp polls<br />
 <br />
+
 # use github<br />
 <br />
 make github repository online<br />
@@ -26,6 +27,7 @@ git push origin master<br />
 mrfoldanyten<br />
 mr10<br />
 <br />
+
 # clone from github<br />
 <br />
 git clone https://github.com/MrFoldAnyTen/VirtDjang.git<br />
@@ -60,6 +62,7 @@ python manage.py migrate<br />
 <br />
 change models, make migrations,migrate<br />
 <br />
+
 # Use the shell<br />
 <br />
 
@@ -104,8 +107,11 @@ and because objects’ representations are used throughout Django’s automatica
 >>> c = q.choice_set.filter(choice_text__startswith='Just hacking')
 >>> c.delete()
 <br />
+
 ## Creating an admin user <br />
+
 # Creating an admin user <br />
+
 ## Creating an admin user <br />
 ### Creating an admin user <br />
 just too seee what md works
